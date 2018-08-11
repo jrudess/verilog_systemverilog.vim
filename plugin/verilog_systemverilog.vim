@@ -118,6 +118,11 @@ let g:verilog_syntax = {
                         \ 'syn_argument': 'contains=verilogTodo,verilogDirective,@Spell'
                         \ },
                         \ {
+                        \ 'match_start' : '^\s*//',
+                        \ 'match_end'   : '^\%(\s*//\)\@!',
+                        \ 'syn_argument': 'contains=verilogTodo,verilogDirective,@Spell keepend extend'
+                        \ },
+                        \ {
                         \ 'match_start' : '/\*',
                         \ 'match_end'   : '\*/',
                         \ 'syn_argument': 'contains=verilogTodo,verilogDirective,@Spell keepend extend'
